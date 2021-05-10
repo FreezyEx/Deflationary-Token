@@ -638,7 +638,7 @@ pragma solidity ^0.6.12;
     }
 
     // Contract implementarion
-    contract Supernova is Context, IERC20, Ownable {
+    contract Toke Name is Context, IERC20, Ownable {
         using SafeMath for uint256;
         using Address for address;
 
@@ -656,8 +656,8 @@ pragma solidity ^0.6.12;
         uint256 private _rTotal = (MAX - (MAX % _tTotal));
         uint256 private _tFeeTotal;
 
-        string private _name = 'Supernova';
-        string private _symbol = 'SUPERNOVA';
+        string private _name = 'TokenName';
+        string private _symbol = 'TokenSymbol';
         uint8 private _decimals = 9;
 
 
