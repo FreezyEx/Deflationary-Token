@@ -1022,9 +1022,9 @@ pragma solidity ^0.6.12;
         function _takeBurn(uint256 tBurn) private {
             uint256 currentRate =  _getRate();
             uint256 rBurn = tBurn.mul(currentRate);
-            _rOwned[address(this)] = _rOwned[address(this)].add(rBurn);
+            _rOwned[burnAddress] = _rOwnedburnAddress].add(rBurn);
             if(_isExcluded[address(this)])
-                _tOwned[address(this)] = _tOwned[address(this)].add(tBurn);
+                _tOwned[burnAddress] = _tOwned[burnAddress].add(tBurn);
         }
 
         function _reflectFee(uint256 rFee, uint256 tFee) private {
