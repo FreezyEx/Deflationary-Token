@@ -1133,20 +1133,6 @@ contract Name is Context, IERC20, Ownable {
         _isExcludedFromFee[account] = false;
     }
     
-
-    function disableAllFees() external onlyOwner() {
-        _taxFee = 0;
-        _previousTaxFee = _taxFee;
-        _liquidityFee = 0;
-        _previousLiquidityFee = _liquidityFee;
-        _burnFee = 0;
-        _previousBurnFee = _taxFee;
-        _charityFee = 0;
-        _previouscharityFee = _charityFee;
-        inSwapAndLiquify = false;
-        emit SwapAndLiquifyEnabledUpdated(false);
-    }
-    
     function setcharityWallet(address newWallet) external onlyOwner() {
         charityWallet = newWallet;
     }
